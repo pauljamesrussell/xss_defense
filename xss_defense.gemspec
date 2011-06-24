@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = XssDefense::VERSION
   s.authors     = ["Paul Russell"]
   s.email       = ["paul@pauljamesrussell.org"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "http://github.com/pauljamesrussell/xss_defense"
+  s.summary     = %q{Rails plugin providing automatic defense from cross site scripting}
+  s.description = %q{Rails plugin providing automatic defense from cross site scripting, through automatic white-list validation of all string fields}
 
   s.rubyforge_project = "xss_defense"
 
