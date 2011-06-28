@@ -12,7 +12,7 @@ describe XssDefense::ActiveRecord do
   
   describe "class methods" do
     it "has the xss_defense class method" do
-      ActiveRecordPerson.methods.should include('xss_defense')
+      ActiveRecordPerson.respond_to?(:xss_defense).should be_true
     end
   end
   
