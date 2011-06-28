@@ -15,6 +15,16 @@ end
 This will automatically validate all string attributes in the model to ensure they only contain safe characters. The list of allowed characters
 is described in the [XssValidator][1] class.
 
+Installation
+============
+
+The gem has currently not been formally released, and needs to be installed via git:
+
+Your Gemfile:
+```ruby
+gem 'xss_defense', :git => 'git://github.com/pauljamesrussell/xss_defense.git'
+```
+
 Contributions
 =============
 
