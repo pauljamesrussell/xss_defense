@@ -1,0 +1,1279 @@
+# Logfile created on Mon Jun 27 22:26:33 +0100 2011 by logger.rb/22285
+D, [2011-06-27T22:27:03.096358 #8915] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:27:03.096851 #8915] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:27:03.099298 #8915] DEBUG -- :   [1m[36mSQL (2.1ms)[0m  [1mCREATE TABLE "person" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) [0m
+D, [2011-06-27T22:27:03.099950 #8915] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:27:03.102283 #8915] DEBUG -- :   [1m[36mSQL (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2011-06-27T22:27:03.102623 #8915] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2011-06-27T22:27:03.105081 #8915] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2011-06-27T22:27:03.105408 #8915] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:27:03.105792 #8915] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+D, [2011-06-27T22:27:03.108488 #8915] DEBUG -- :   [1m[35mSQL (2.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+I, [2011-06-27T22:27:03.109173 #8915]  INFO -- : TEST
+D, [2011-06-27T22:28:20.457329 #8934] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:28:20.457920 #8934] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:28:20.461486 #8934] DEBUG -- :   [1m[36mSQL (3.4ms)[0m  [1mDROP TABLE "person"[0m
+D, [2011-06-27T22:28:20.464002 #8934] DEBUG -- :   [1m[35mSQL (2.1ms)[0m  CREATE TABLE "person" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:28:20.464701 #8934] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:28:20.465038 #8934] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:28:20.465536 #8934]  INFO -- : TEST
+D, [2011-06-27T22:31:24.872047 #8998] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:31:24.872646 #8998] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:31:24.876080 #8998] DEBUG -- :   [1m[36mSQL (3.3ms)[0m  [1mDROP TABLE "person"[0m
+D, [2011-06-27T22:31:24.878127 #8998] DEBUG -- :   [1m[35mSQL (1.8ms)[0m  CREATE TABLE "person" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:31:24.878603 #8998] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:31:24.878943 #8998] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:31:24.879430 #8998]  INFO -- : TEST
+D, [2011-06-27T22:33:16.158279 #9035] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:33:16.158878 #9035] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:33:16.162241 #9035] DEBUG -- :   [1m[36mSQL (3.2ms)[0m  [1mDROP TABLE "person"[0m
+D, [2011-06-27T22:33:16.164799 #9035] DEBUG -- :   [1m[35mSQL (2.1ms)[0m  CREATE TABLE "person" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:33:16.165503 #9035] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:33:16.165851 #9035] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:33:16.166348 #9035]  INFO -- : TEST
+D, [2011-06-27T22:34:32.167176 #9066] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:34:32.168062 #9066] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:34:32.171365 #9066] DEBUG -- :   [1m[36mSQL (3.1ms)[0m  [1mDROP TABLE "person"[0m
+D, [2011-06-27T22:34:32.173684 #9066] DEBUG -- :   [1m[35mSQL (1.9ms)[0m  CREATE TABLE "person" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:34:32.174338 #9066] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:34:32.174694 #9066] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:34:32.175218 #9066]  INFO -- : TEST
+D, [2011-06-27T22:34:33.400244 #9080] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:34:33.400836 #9080] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:34:33.403949 #9080] DEBUG -- :   [1m[36mSQL (3.0ms)[0m  [1mDROP TABLE "person"[0m
+D, [2011-06-27T22:34:33.406297 #9080] DEBUG -- :   [1m[35mSQL (1.9ms)[0m  CREATE TABLE "person" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:34:33.406867 #9080] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:34:33.407198 #9080] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:34:33.407717 #9080]  INFO -- : TEST
+D, [2011-06-27T22:38:18.431437 #9102] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:38:18.432008 #9102] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:38:18.435318 #9102] DEBUG -- :   [1m[36mSQL (3.2ms)[0m  [1mDROP TABLE "person"[0m
+D, [2011-06-27T22:38:18.437753 #9102] DEBUG -- :   [1m[35mSQL (2.1ms)[0m  CREATE TABLE "person" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:38:18.438404 #9102] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:38:18.438763 #9102] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:38:18.439270 #9102]  INFO -- : TEST
+D, [2011-06-27T22:39:33.445162 #9136] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:39:33.445734 #9136] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:39:33.447412 #9136] DEBUG -- :   [1m[36mSQL (1.6ms)[0m  [1mDROP TABLE "person"[0m
+D, [2011-06-27T22:39:33.451065 #9136] DEBUG -- :   [1m[35mSQL (3.3ms)[0m  CREATE TABLE "person" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:39:33.451594 #9136] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:39:33.451921 #9136] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:39:33.452440 #9136]  INFO -- : TEST
+D, [2011-06-27T22:41:08.128225 #9279] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:41:08.128868 #9279] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:41:08.130991 #9279] DEBUG -- :   [1m[36mSQL (2.0ms)[0m  [1mDROP TABLE "person"[0m
+D, [2011-06-27T22:41:08.133376 #9279] DEBUG -- :   [1m[35mSQL (2.0ms)[0m  CREATE TABLE "person" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:41:08.134061 #9279] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:41:08.134435 #9279] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:41:08.134982 #9279]  INFO -- : TEST
+D, [2011-06-27T22:44:12.227096 #9376] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:44:12.227766 #9376] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:44:12.229978 #9376] DEBUG -- :   [1m[36mSQL (2.1ms)[0m  [1mDROP TABLE "person"[0m
+D, [2011-06-27T22:44:12.232403 #9376] DEBUG -- :   [1m[35mSQL (2.1ms)[0m  CREATE TABLE "person" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:44:12.232866 #9376] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:44:12.233196 #9376] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:44:12.233699 #9376]  INFO -- : TEST
+D, [2011-06-27T22:44:25.310834 #9391] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:44:25.311405 #9391] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:44:25.314241 #9391] DEBUG -- :   [1m[36mSQL (2.6ms)[0m  [1mDROP TABLE "person"[0m
+D, [2011-06-27T22:44:25.316964 #9391] DEBUG -- :   [1m[35mSQL (2.3ms)[0m  CREATE TABLE "person" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:44:25.318666 #9391] DEBUG -- :   [1m[36mSQL (1.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:44:25.320080 #9391] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:44:25.320732 #9391]  INFO -- : TEST
+D, [2011-06-27T22:44:38.101390 #9405] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:44:38.101978 #9405] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:44:38.104428 #9405] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mDROP TABLE "person"[0m
+D, [2011-06-27T22:44:38.106924 #9405] DEBUG -- :   [1m[35mSQL (2.1ms)[0m  CREATE TABLE "person" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:44:38.107598 #9405] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:44:38.107953 #9405] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:44:38.108468 #9405]  INFO -- : TEST
+D, [2011-06-27T22:44:38.111170 #9405] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:44:38.111476 #9405] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:45:06.477201 #9423] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:45:06.477777 #9423] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:45:06.481203 #9423] DEBUG -- :   [1m[36mSQL (3.3ms)[0m  [1mDROP TABLE "person"[0m
+D, [2011-06-27T22:45:06.483700 #9423] DEBUG -- :   [1m[35mSQL (2.1ms)[0m  CREATE TABLE "person" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:45:06.484257 #9423] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:45:06.484615 #9423] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:45:06.485132 #9423]  INFO -- : TEST
+D, [2011-06-27T22:45:06.494570 #9423] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:45:06.495122 #9423] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:45:06.497008 #9423] DEBUG -- :   [1m[36mSQL (1.7ms)[0m  [1mDROP TABLE "person"[0m
+D, [2011-06-27T22:45:06.499229 #9423] DEBUG -- :   [1m[35mSQL (1.9ms)[0m  CREATE TABLE "person" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:45:06.499870 #9423] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:45:06.500242 #9423] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:45:06.500757 #9423]  INFO -- : TEST
+D, [2011-06-27T22:45:06.501566 #9423] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:45:06.501862 #9423] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:45:06.511827 #9423] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:45:06.512403 #9423] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:45:06.514569 #9423] DEBUG -- :   [1m[36mSQL (2.0ms)[0m  [1mDROP TABLE "person"[0m
+D, [2011-06-27T22:45:06.516486 #9423] DEBUG -- :   [1m[35mSQL (1.6ms)[0m  CREATE TABLE "person" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:45:06.517447 #9423] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:45:06.518835 #9423] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:45:06.519350 #9423]  INFO -- : TEST
+D, [2011-06-27T22:45:30.365303 #9452] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:45:30.365911 #9452] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:45:30.369969 #9452] DEBUG -- :   [1m[36mSQL (3.7ms)[0m  [1mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) [0m
+D, [2011-06-27T22:45:30.370647 #9452] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:45:30.371028 #9452] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+I, [2011-06-27T22:45:30.371547 #9452]  INFO -- : TEST
+D, [2011-06-27T22:45:30.381099 #9452] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+D, [2011-06-27T22:45:30.381678 #9452] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:45:30.383737 #9452] DEBUG -- :   [1m[35mSQL (1.9ms)[0m  DROP TABLE "people"
+D, [2011-06-27T22:45:30.385964 #9452] DEBUG -- :   [1m[36mSQL (1.9ms)[0m  [1mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) [0m
+D, [2011-06-27T22:45:30.386350 #9452] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:45:30.386704 #9452] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+I, [2011-06-27T22:45:30.387190 #9452]  INFO -- : TEST
+D, [2011-06-27T22:45:30.387986 #9452] DEBUG -- :   [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:45:30.388587 #9452] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:45:30.398804 #9452] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+D, [2011-06-27T22:45:30.399414 #9452] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:45:30.401883 #9452] DEBUG -- :   [1m[35mSQL (2.3ms)[0m  DROP TABLE "people"
+D, [2011-06-27T22:45:30.404681 #9452] DEBUG -- :   [1m[36mSQL (2.4ms)[0m  [1mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) [0m
+D, [2011-06-27T22:45:30.408264 #9452] DEBUG -- :   [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:45:30.408661 #9452] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+I, [2011-06-27T22:45:30.409194 #9452]  INFO -- : TEST
+D, [2011-06-27T22:46:18.278780 #9468] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:46:18.279385 #9468] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:46:18.283085 #9468] DEBUG -- :   [1m[36mSQL (3.5ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:46:18.285831 #9468] DEBUG -- :   [1m[35mSQL (2.4ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:46:18.286499 #9468] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:46:18.286878 #9468] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:46:18.287384 #9468]  INFO -- : TEST
+D, [2011-06-27T22:46:18.296801 #9468] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:46:18.297373 #9468] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:46:18.299984 #9468] DEBUG -- :   [1m[36mSQL (2.4ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:46:18.302457 #9468] DEBUG -- :   [1m[35mSQL (2.1ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:46:18.302994 #9468] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:46:18.303347 #9468] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:46:18.303848 #9468]  INFO -- : TEST
+D, [2011-06-27T22:46:18.313968 #9468] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:46:18.314579 #9468] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:46:18.317068 #9468] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:46:18.319621 #9468] DEBUG -- :   [1m[35mSQL (2.2ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:46:18.320222 #9468] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:46:18.320597 #9468] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:46:18.321134 #9468]  INFO -- : TEST
+D, [2011-06-27T22:47:48.494893 #9502] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:47:48.495504 #9502] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:47:48.518716 #9502] DEBUG -- :   [1m[36mSQL (23.0ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:47:48.521295 #9502] DEBUG -- :   [1m[35mSQL (2.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:47:48.521677 #9502] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:47:48.522028 #9502] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:47:48.522531 #9502]  INFO -- : TEST
+D, [2011-06-27T22:47:48.532158 #9502] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:47:48.532729 #9502] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:47:48.535037 #9502] DEBUG -- :   [1m[36mSQL (2.2ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:47:48.538682 #9502] DEBUG -- :   [1m[35mSQL (3.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:47:48.539325 #9502] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:47:48.539697 #9502] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:47:48.540213 #9502]  INFO -- : TEST
+D, [2011-06-27T22:47:48.551706 #9502] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:47:48.552323 #9502] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:47:48.554741 #9502] DEBUG -- :   [1m[36mSQL (2.2ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:47:48.556803 #9502] DEBUG -- :   [1m[35mSQL (1.7ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:47:48.558288 #9502] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:47:48.558651 #9502] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:47:48.559166 #9502]  INFO -- : TEST
+D, [2011-06-27T22:48:04.532297 #9518] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:48:04.532891 #9518] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:48:04.535027 #9518] DEBUG -- :   [1m[36mSQL (2.0ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:48:04.537219 #9518] DEBUG -- :   [1m[35mSQL (1.9ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:48:04.537676 #9518] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:48:04.538033 #9518] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:48:04.538529 #9518]  INFO -- : TEST
+D, [2011-06-27T22:48:04.548262 #9518] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:48:04.548832 #9518] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:48:04.551071 #9518] DEBUG -- :   [1m[36mSQL (2.1ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:48:04.554210 #9518] DEBUG -- :   [1m[35mSQL (2.7ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:48:04.554853 #9518] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:48:04.555235 #9518] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:48:04.555748 #9518]  INFO -- : TEST
+D, [2011-06-27T22:48:04.566122 #9518] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:48:04.566732 #9518] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:48:04.569255 #9518] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:48:04.571889 #9518] DEBUG -- :   [1m[35mSQL (2.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:48:04.574072 #9518] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:48:04.574435 #9518] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:48:04.574954 #9518]  INFO -- : TEST
+D, [2011-06-27T22:48:15.057137 #9532] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:48:15.057951 #9532] DEBUG -- :   [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:48:15.060414 #9532] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:48:15.062635 #9532] DEBUG -- :   [1m[35mSQL (1.9ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:48:15.063790 #9532] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:48:15.064647 #9532] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:48:15.065511 #9532]  INFO -- : TEST
+D, [2011-06-27T22:48:15.093511 #9532] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:48:15.094156 #9532] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:48:15.229571 #9532] DEBUG -- :   [1m[36mSQL (135.2ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:48:15.232793 #9532] DEBUG -- :   [1m[35mSQL (2.7ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:48:15.233426 #9532] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:48:15.234219 #9532] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:48:15.234825 #9532]  INFO -- : TEST
+D, [2011-06-27T22:48:15.246926 #9532] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:48:15.247537 #9532] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:48:15.250027 #9532] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:48:15.253058 #9532] DEBUG -- :   [1m[35mSQL (2.7ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:48:15.253509 #9532] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:48:15.253874 #9532] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:48:15.254388 #9532]  INFO -- : TEST
+D, [2011-06-27T22:48:20.629005 #9547] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:48:20.629600 #9547] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:48:20.633441 #9547] DEBUG -- :   [1m[36mSQL (3.6ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:48:20.636406 #9547] DEBUG -- :   [1m[35mSQL (2.4ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:48:20.636916 #9547] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:48:20.637291 #9547] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:48:20.637795 #9547]  INFO -- : TEST
+D, [2011-06-27T22:48:20.648267 #9547] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:48:20.648848 #9547] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:48:20.650902 #9547] DEBUG -- :   [1m[36mSQL (1.9ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:48:20.653326 #9547] DEBUG -- :   [1m[35mSQL (2.1ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:48:20.654012 #9547] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:48:20.654362 #9547] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:48:20.654864 #9547]  INFO -- : TEST
+D, [2011-06-27T22:48:20.665616 #9547] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:48:20.666232 #9547] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:48:20.668858 #9547] DEBUG -- :   [1m[36mSQL (2.4ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:48:20.671260 #9547] DEBUG -- :   [1m[35mSQL (2.0ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:48:20.673471 #9547] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:48:20.673857 #9547] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:48:20.674397 #9547]  INFO -- : TEST
+D, [2011-06-27T22:57:38.269475 #9638] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:57:38.270075 #9638] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:57:38.273046 #9638] DEBUG -- :   [1m[36mSQL (2.8ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:57:38.276083 #9638] DEBUG -- :   [1m[35mSQL (2.7ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:57:38.276531 #9638] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:57:38.276888 #9638] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:57:38.277397 #9638]  INFO -- : TEST
+D, [2011-06-27T22:57:38.287709 #9638] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:57:38.288289 #9638] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:57:38.290435 #9638] DEBUG -- :   [1m[36mSQL (2.0ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:57:38.293045 #9638] DEBUG -- :   [1m[35mSQL (2.2ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:57:38.293630 #9638] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:57:38.293986 #9638] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:57:38.294493 #9638]  INFO -- : TEST
+D, [2011-06-27T22:57:38.305205 #9638] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:57:38.305832 #9638] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:57:38.307916 #9638] DEBUG -- :   [1m[36mSQL (1.9ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:57:38.310978 #9638] DEBUG -- :   [1m[35mSQL (2.5ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:57:38.313200 #9638] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:57:38.313575 #9638] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:57:38.314110 #9638]  INFO -- : TEST
+D, [2011-06-27T22:58:08.921309 #9654] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:58:08.921924 #9654] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:58:08.925360 #9654] DEBUG -- :   [1m[36mSQL (3.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:58:08.928099 #9654] DEBUG -- :   [1m[35mSQL (2.4ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:58:08.928791 #9654] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:58:08.929168 #9654] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:58:08.929681 #9654]  INFO -- : TEST
+D, [2011-06-27T22:58:08.939628 #9654] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:58:08.940193 #9654] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:58:08.942257 #9654] DEBUG -- :   [1m[36mSQL (1.9ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:58:08.944870 #9654] DEBUG -- :   [1m[35mSQL (2.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:58:08.945368 #9654] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:58:08.945732 #9654] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:58:08.946236 #9654]  INFO -- : TEST
+D, [2011-06-27T22:58:08.957719 #9654] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:58:08.958332 #9654] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:58:08.960461 #9654] DEBUG -- :   [1m[36mSQL (2.0ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:58:08.962818 #9654] DEBUG -- :   [1m[35mSQL (2.1ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:58:08.965198 #9654] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:58:08.965565 #9654] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:58:08.966093 #9654]  INFO -- : TEST
+D, [2011-06-27T22:58:28.545641 #9669] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:58:28.546235 #9669] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:58:28.549894 #9669] DEBUG -- :   [1m[36mSQL (3.5ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:58:28.552624 #9669] DEBUG -- :   [1m[35mSQL (2.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:58:28.553204 #9669] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:58:28.553575 #9669] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:58:28.554082 #9669]  INFO -- : TEST
+D, [2011-06-27T22:58:28.564806 #9669] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:58:28.565375 #9669] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:58:28.567609 #9669] DEBUG -- :   [1m[36mSQL (2.1ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:58:28.570087 #9669] DEBUG -- :   [1m[35mSQL (2.1ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:58:28.570525 #9669] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:58:28.570877 #9669] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:58:28.571379 #9669]  INFO -- : TEST
+D, [2011-06-27T22:58:28.592958 #9669] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:58:28.593911 #9669] DEBUG -- :   [1m[35mSQL (0.5ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:58:28.595933 #9669] DEBUG -- :   [1m[36mSQL (1.8ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:58:28.598028 #9669] DEBUG -- :   [1m[35mSQL (1.8ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:58:28.599184 #9669] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:58:28.600095 #9669] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:58:28.600915 #9669]  INFO -- : TEST
+D, [2011-06-27T22:58:33.244730 #9683] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:58:33.245323 #9683] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:58:33.249830 #9683] DEBUG -- :   [1m[36mSQL (4.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:58:33.252458 #9683] DEBUG -- :   [1m[35mSQL (2.2ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:58:33.252957 #9683] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:58:33.253315 #9683] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:58:33.253816 #9683]  INFO -- : TEST
+D, [2011-06-27T22:58:33.263840 #9683] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:58:33.264657 #9683] DEBUG -- :   [1m[35mSQL (0.5ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:58:33.266552 #9683] DEBUG -- :   [1m[36mSQL (1.8ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:58:33.269061 #9683] DEBUG -- :   [1m[35mSQL (2.2ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:58:33.269724 #9683] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:58:33.270106 #9683] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:58:33.270611 #9683]  INFO -- : TEST
+D, [2011-06-27T22:58:33.282711 #9683] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:58:33.289821 #9683] DEBUG -- :   [1m[35mSQL (3.7ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:58:33.292151 #9683] DEBUG -- :   [1m[36mSQL (2.1ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:58:33.293991 #9683] DEBUG -- :   [1m[35mSQL (1.5ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:58:33.295061 #9683] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:58:33.295970 #9683] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:58:33.296816 #9683]  INFO -- : TEST
+D, [2011-06-27T22:58:39.039534 #9697] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:58:39.040131 #9697] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:58:39.043779 #9697] DEBUG -- :   [1m[36mSQL (3.5ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:58:39.046396 #9697] DEBUG -- :   [1m[35mSQL (2.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:58:39.047221 #9697] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:58:39.047721 #9697] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:58:39.048248 #9697]  INFO -- : TEST
+D, [2011-06-27T22:58:39.058863 #9697] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:58:39.059440 #9697] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:58:39.061513 #9697] DEBUG -- :   [1m[36mSQL (1.9ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:58:39.064227 #9697] DEBUG -- :   [1m[35mSQL (2.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:58:39.064902 #9697] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:58:39.065277 #9697] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:58:39.065780 #9697]  INFO -- : TEST
+D, [2011-06-27T22:58:39.077527 #9697] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:58:39.078156 #9697] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:58:39.080902 #9697] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:58:39.082895 #9697] DEBUG -- :   [1m[35mSQL (1.6ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:58:39.083565 #9697] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:58:39.083928 #9697] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:58:39.084455 #9697]  INFO -- : TEST
+D, [2011-06-27T22:59:44.775911 #9713] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:59:44.776514 #9713] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:59:44.780136 #9713] DEBUG -- :   [1m[36mSQL (3.4ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:59:44.782800 #9713] DEBUG -- :   [1m[35mSQL (2.2ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:59:44.783449 #9713] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:59:44.783816 #9713] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:59:44.784331 #9713]  INFO -- : TEST
+D, [2011-06-27T22:59:44.794357 #9713] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:59:44.794921 #9713] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:59:44.797033 #9713] DEBUG -- :   [1m[36mSQL (2.0ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:59:44.799475 #9713] DEBUG -- :   [1m[35mSQL (2.1ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:59:44.800147 #9713] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:59:44.800521 #9713] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:59:44.801038 #9713]  INFO -- : TEST
+D, [2011-06-27T22:59:44.811504 #9713] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:59:44.812156 #9713] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:59:44.814771 #9713] DEBUG -- :   [1m[36mSQL (2.4ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:59:44.817287 #9713] DEBUG -- :   [1m[35mSQL (2.1ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:59:44.819990 #9713] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:59:44.820401 #9713] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:59:44.820920 #9713]  INFO -- : TEST
+D, [2011-06-27T22:59:57.813081 #9729] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:59:57.813773 #9729] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:59:57.817387 #9729] DEBUG -- :   [1m[36mSQL (3.5ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:59:57.819727 #9729] DEBUG -- :   [1m[35mSQL (2.0ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:59:57.820151 #9729] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:59:57.820508 #9729] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:59:57.821008 #9729]  INFO -- : TEST
+D, [2011-06-27T22:59:57.831276 #9729] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:59:57.831844 #9729] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:59:57.834002 #9729] DEBUG -- :   [1m[36mSQL (2.0ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:59:57.837124 #9729] DEBUG -- :   [1m[35mSQL (2.8ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:59:57.837580 #9729] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:59:57.837934 #9729] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:59:57.838453 #9729]  INFO -- : TEST
+D, [2011-06-27T22:59:57.852336 #9729] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T22:59:57.852961 #9729] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T22:59:57.855640 #9729] DEBUG -- :   [1m[36mSQL (2.5ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T22:59:57.857977 #9729] DEBUG -- :   [1m[35mSQL (2.0ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T22:59:57.858443 #9729] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T22:59:57.858806 #9729] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T22:59:57.859323 #9729]  INFO -- : TEST
+D, [2011-06-27T23:00:19.977762 #9776] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:00:19.978362 #9776] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:00:19.981714 #9776] DEBUG -- :   [1m[36mSQL (3.2ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:00:19.984445 #9776] DEBUG -- :   [1m[35mSQL (2.4ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:00:19.985357 #9776] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:00:19.985730 #9776] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:00:19.986257 #9776]  INFO -- : TEST
+D, [2011-06-27T23:00:19.996997 #9776] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:00:19.997564 #9776] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:00:19.999671 #9776] DEBUG -- :   [1m[36mSQL (1.9ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:00:20.002628 #9776] DEBUG -- :   [1m[35mSQL (2.6ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:00:20.003141 #9776] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:00:20.003738 #9776] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:00:20.004266 #9776]  INFO -- : TEST
+D, [2011-06-27T23:00:21.233852 #9789] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:00:21.234454 #9789] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:00:21.237874 #9789] DEBUG -- :   [1m[36mSQL (3.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:00:21.240533 #9789] DEBUG -- :   [1m[35mSQL (2.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:00:21.241224 #9789] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:00:21.241604 #9789] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:00:21.242118 #9789]  INFO -- : TEST
+D, [2011-06-27T23:00:21.252524 #9789] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:00:21.253292 #9789] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:00:21.255274 #9789] DEBUG -- :   [1m[36mSQL (1.8ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:00:21.257911 #9789] DEBUG -- :   [1m[35mSQL (2.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:00:21.258623 #9789] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:00:21.258998 #9789] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:00:21.259508 #9789]  INFO -- : TEST
+D, [2011-06-27T23:00:29.836652 #9814] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:00:29.837303 #9814] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:00:29.840899 #9814] DEBUG -- :   [1m[36mSQL (3.4ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:00:29.843561 #9814] DEBUG -- :   [1m[35mSQL (2.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:00:29.844240 #9814] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:00:29.844623 #9814] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:00:29.845180 #9814]  INFO -- : TEST
+D, [2011-06-27T23:00:29.856568 #9814] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:00:29.857140 #9814] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:00:29.859431 #9814] DEBUG -- :   [1m[36mSQL (2.1ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:00:29.861804 #9814] DEBUG -- :   [1m[35mSQL (2.0ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:00:29.862443 #9814] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:00:29.863051 #9814] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:00:29.863575 #9814]  INFO -- : TEST
+D, [2011-06-27T23:00:53.032748 #9909] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:00:53.033348 #9909] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:00:53.037489 #9909] DEBUG -- :   [1m[36mSQL (4.0ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:00:53.040446 #9909] DEBUG -- :   [1m[35mSQL (2.5ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:00:53.041025 #9909] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:00:53.041385 #9909] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:00:53.041912 #9909]  INFO -- : TEST
+D, [2011-06-27T23:00:53.052338 #9909] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:00:53.052908 #9909] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:00:53.054999 #9909] DEBUG -- :   [1m[36mSQL (2.0ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:00:53.057503 #9909] DEBUG -- :   [1m[35mSQL (2.2ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:00:53.058197 #9909] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:00:53.058569 #9909] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:00:53.059068 #9909]  INFO -- : TEST
+D, [2011-06-27T23:01:12.508294 #9927] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:01:12.508885 #9927] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:01:12.512473 #9927] DEBUG -- :   [1m[36mSQL (3.4ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:01:12.515041 #9927] DEBUG -- :   [1m[35mSQL (2.2ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:01:12.515499 #9927] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:01:12.515854 #9927] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:01:12.516371 #9927]  INFO -- : TEST
+D, [2011-06-27T23:01:12.526075 #9927] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:01:12.526641 #9927] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:01:12.528799 #9927] DEBUG -- :   [1m[36mSQL (2.0ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:01:12.531211 #9927] DEBUG -- :   [1m[35mSQL (2.0ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:01:12.531811 #9927] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:01:12.532162 #9927] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:01:12.532682 #9927]  INFO -- : TEST
+D, [2011-06-27T23:02:06.195969 #9947] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:02:06.196567 #9947] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:02:06.200159 #9947] DEBUG -- :   [1m[36mSQL (3.4ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:02:06.202906 #9947] DEBUG -- :   [1m[35mSQL (2.4ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:02:06.203583 #9947] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:02:06.203959 #9947] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:02:06.204470 #9947]  INFO -- : TEST
+D, [2011-06-27T23:02:06.214499 #9947] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:02:06.215074 #9947] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:02:06.217581 #9947] DEBUG -- :   [1m[36mSQL (2.4ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:02:06.219925 #9947] DEBUG -- :   [1m[35mSQL (2.0ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:02:06.220388 #9947] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:02:06.220743 #9947] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:02:06.221230 #9947]  INFO -- : TEST
+D, [2011-06-27T23:02:56.152452 #9966] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:02:56.153050 #9966] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:02:56.177480 #9966] DEBUG -- :   [1m[36mSQL (24.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:02:56.197970 #9966] DEBUG -- :   [1m[35mSQL (20.1ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:02:56.198507 #9966] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:02:56.198866 #9966] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:02:56.199382 #9966]  INFO -- : TEST
+D, [2011-06-27T23:02:56.208844 #9966] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:02:56.209419 #9966] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:02:56.220627 #9966] DEBUG -- :   [1m[36mSQL (11.0ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:02:56.233277 #9966] DEBUG -- :   [1m[35mSQL (12.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:02:56.235003 #9966] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:02:56.235356 #9966] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:02:56.235854 #9966]  INFO -- : TEST
+D, [2011-06-27T23:04:04.434285 #10000] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:04:04.434878 #10000] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:04:04.437382 #10000] DEBUG -- :   [1m[36mSQL (2.4ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:04:04.440094 #10000] DEBUG -- :   [1m[35mSQL (2.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:04:04.440766 #10000] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:04:04.441150 #10000] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:04:04.441670 #10000]  INFO -- : TEST
+D, [2011-06-27T23:04:04.451860 #10000] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:04:04.452461 #10000] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:04:04.454845 #10000] DEBUG -- :   [1m[36mSQL (2.2ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:04:04.457471 #10000] DEBUG -- :   [1m[35mSQL (2.2ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:04:04.458146 #10000] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:04:04.458527 #10000] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:04:04.459035 #10000]  INFO -- : TEST
+D, [2011-06-27T23:04:04.469900 #10000] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:04:04.470495 #10000] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:04:04.472952 #10000] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:04:04.475328 #10000] DEBUG -- :   [1m[35mSQL (2.1ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:04:04.477300 #10000] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:04:04.477756 #10000] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:04:04.478263 #10000]  INFO -- : TEST
+D, [2011-06-27T23:04:04.488737 #10000] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:04:04.489341 #10000] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:04:04.491810 #10000] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:04:04.494569 #10000] DEBUG -- :   [1m[35mSQL (2.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:04:04.495237 #10000] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:04:04.495633 #10000] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:04:04.496219 #10000]  INFO -- : TEST
+D, [2011-06-27T23:04:04.506987 #10000] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:04:04.507597 #10000] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:04:04.510110 #10000] DEBUG -- :   [1m[36mSQL (2.4ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:04:04.512348 #10000] DEBUG -- :   [1m[35mSQL (1.9ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:04:04.513719 #10000] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:04:04.514272 #10000] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:04:04.514794 #10000]  INFO -- : TEST
+D, [2011-06-27T23:04:39.847730 #10019] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:04:39.848325 #10019] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:04:39.852176 #10019] DEBUG -- :   [1m[36mSQL (3.7ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:04:39.855190 #10019] DEBUG -- :   [1m[35mSQL (2.5ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:04:39.855859 #10019] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:04:39.856225 #10019] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:04:39.856714 #10019]  INFO -- : TEST
+D, [2011-06-27T23:04:39.878972 #10019] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:04:39.879561 #10019] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:04:39.882007 #10019] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:04:39.884306 #10019] DEBUG -- :   [1m[35mSQL (2.0ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:04:39.884731 #10019] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:04:39.885093 #10019] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:04:39.885559 #10019]  INFO -- : TEST
+D, [2011-06-27T23:04:39.908292 #10019] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:04:39.908918 #10019] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:04:39.911454 #10019] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:04:39.914418 #10019] DEBUG -- :   [1m[35mSQL (2.6ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:04:39.915077 #10019] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:04:39.915458 #10019] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:04:39.915948 #10019]  INFO -- : TEST
+D, [2011-06-27T23:04:39.980220 #10019] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:04:39.980803 #10019] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:04:39.983087 #10019] DEBUG -- :   [1m[36mSQL (2.1ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:04:39.985305 #10019] DEBUG -- :   [1m[35mSQL (1.9ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:04:39.985718 #10019] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:04:39.986065 #10019] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:04:39.986559 #10019]  INFO -- : TEST
+D, [2011-06-27T23:04:40.007648 #10019] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:04:40.008237 #10019] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:04:40.010756 #10019] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:04:40.013593 #10019] DEBUG -- :   [1m[35mSQL (2.5ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:04:40.014081 #10019] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:04:40.014433 #10019] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:04:40.014908 #10019]  INFO -- : TEST
+D, [2011-06-27T23:05:03.809163 #10022] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:05:03.809758 #10022] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:05:03.813755 #10022] DEBUG -- :   [1m[36mSQL (3.8ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:05:03.816765 #10022] DEBUG -- :   [1m[35mSQL (2.6ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:05:03.817486 #10022] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:05:03.817858 #10022] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:05:03.818340 #10022]  INFO -- : TEST
+D, [2011-06-27T23:05:03.839694 #10022] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:05:03.840285 #10022] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:05:03.842805 #10022] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:05:03.845225 #10022] DEBUG -- :   [1m[35mSQL (2.0ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:05:03.845733 #10022] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:05:03.846082 #10022] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:05:03.846554 #10022]  INFO -- : TEST
+D, [2011-06-27T23:05:03.869582 #10022] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:05:03.870211 #10022] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:05:03.873565 #10022] DEBUG -- :   [1m[36mSQL (3.2ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:05:03.876157 #10022] DEBUG -- :   [1m[35mSQL (2.1ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:05:03.876553 #10022] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:05:03.876915 #10022] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:05:03.877397 #10022]  INFO -- : TEST
+D, [2011-06-27T23:05:03.941244 #10022] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:05:03.941827 #10022] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:05:03.944219 #10022] DEBUG -- :   [1m[36mSQL (2.2ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:05:03.946567 #10022] DEBUG -- :   [1m[35mSQL (2.0ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:05:03.947055 #10022] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:05:03.947407 #10022] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:05:03.947913 #10022]  INFO -- : TEST
+D, [2011-06-27T23:05:03.968887 #10022] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:05:03.969471 #10022] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:05:03.972262 #10022] DEBUG -- :   [1m[36mSQL (2.6ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:05:03.974630 #10022] DEBUG -- :   [1m[35mSQL (2.0ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:05:03.975068 #10022] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:05:03.975439 #10022] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:05:03.975916 #10022]  INFO -- : TEST
+D, [2011-06-27T23:05:18.731838 #10024] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:05:18.732437 #10024] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:05:18.735964 #10024] DEBUG -- :   [1m[36mSQL (3.4ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:05:18.738568 #10024] DEBUG -- :   [1m[35mSQL (2.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:05:18.739078 #10024] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:05:18.739423 #10024] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:05:18.739898 #10024]  INFO -- : TEST
+D, [2011-06-27T23:05:18.761790 #10024] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:05:18.762406 #10024] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:05:18.764882 #10024] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:05:18.767437 #10024] DEBUG -- :   [1m[35mSQL (2.2ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:05:18.768095 #10024] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:05:18.768478 #10024] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:05:18.768978 #10024]  INFO -- : TEST
+D, [2011-06-27T23:05:24.496770 #10029] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:05:24.497366 #10029] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:05:24.500815 #10029] DEBUG -- :   [1m[36mSQL (3.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:05:24.503575 #10029] DEBUG -- :   [1m[35mSQL (2.4ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:05:24.504265 #10029] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:05:24.504658 #10029] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:05:24.505179 #10029]  INFO -- : TEST
+D, [2011-06-27T23:05:24.515496 #10029] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:05:24.516092 #10029] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:05:24.518234 #10029] DEBUG -- :   [1m[36mSQL (2.0ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:05:24.520844 #10029] DEBUG -- :   [1m[35mSQL (2.2ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:05:24.521413 #10029] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:05:24.521768 #10029] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:05:24.522269 #10029]  INFO -- : TEST
+D, [2011-06-27T23:05:35.793893 #10043] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:05:35.794498 #10043] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:05:35.798399 #10043] DEBUG -- :   [1m[36mSQL (3.7ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:05:35.801336 #10043] DEBUG -- :   [1m[35mSQL (2.4ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:05:35.801910 #10043] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:05:35.802291 #10043] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:05:35.802810 #10043]  INFO -- : TEST
+D, [2011-06-27T23:05:35.812309 #10043] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-27T23:05:35.812878 #10043] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-27T23:05:35.815342 #10043] DEBUG -- :   [1m[36mSQL (2.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-27T23:05:35.817933 #10043] DEBUG -- :   [1m[35mSQL (2.2ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-27T23:05:35.818606 #10043] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-27T23:05:35.818982 #10043] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-27T23:05:35.819494 #10043]  INFO -- : TEST
+D, [2011-06-28T06:36:26.001302 #10184] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-28T06:36:26.025361 #10184] DEBUG -- :   [1m[35mSQL (0.5ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-28T06:36:26.061118 #10184] DEBUG -- :   [1m[36mSQL (35.5ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-28T06:36:26.064068 #10184] DEBUG -- :   [1m[35mSQL (2.5ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-28T06:36:26.064537 #10184] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-28T06:36:26.064904 #10184] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-28T06:36:26.065430 #10184]  INFO -- : TEST
+D, [2011-06-28T06:36:26.075450 #10184] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-28T06:36:26.076014 #10184] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-28T06:36:26.078260 #10184] DEBUG -- :   [1m[36mSQL (2.1ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-28T06:36:26.081226 #10184] DEBUG -- :   [1m[35mSQL (2.6ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-28T06:36:26.081702 #10184] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-28T06:36:26.082057 #10184] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-28T06:36:26.082559 #10184]  INFO -- : TEST
+D, [2011-06-28T06:39:12.339508 #10205] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-28T06:39:12.340098 #10205] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-28T06:39:12.343811 #10205] DEBUG -- :   [1m[36mSQL (3.5ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-28T06:39:12.346693 #10205] DEBUG -- :   [1m[35mSQL (2.5ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-28T06:39:12.347393 #10205] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-28T06:39:12.347811 #10205] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-28T06:39:12.348355 #10205]  INFO -- : TEST
+D, [2011-06-28T06:42:04.248758 #10335] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-28T06:42:04.249356 #10335] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-28T06:42:04.251475 #10335] DEBUG -- :   [1m[36mSQL (2.0ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-28T06:42:04.254095 #10335] DEBUG -- :   [1m[35mSQL (2.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-28T06:42:04.254779 #10335] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-28T06:42:04.255139 #10335] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-28T06:42:04.255977 #10335]  INFO -- : TEST
+D, [2011-06-28T06:45:16.662883 #10357] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-28T06:45:16.663474 #10357] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-28T06:45:16.665668 #10357] DEBUG -- :   [1m[36mSQL (2.0ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-28T06:45:16.668117 #10357] DEBUG -- :   [1m[35mSQL (2.1ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-28T06:45:16.668686 #10357] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-28T06:45:16.669034 #10357] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-28T06:45:16.669547 #10357]  INFO -- : TEST
+D, [2011-06-28T06:47:20.487763 #10379] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-28T06:47:20.488369 #10379] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-28T06:47:20.491417 #10379] DEBUG -- :   [1m[36mSQL (2.9ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-28T06:47:20.493977 #10379] DEBUG -- :   [1m[35mSQL (2.2ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-28T06:47:20.494655 #10379] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-28T06:47:20.495028 #10379] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-28T06:47:20.495557 #10379]  INFO -- : TEST
+D, [2011-06-28T06:47:27.481920 #10395] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2011-06-28T06:47:27.482523 #10395] DEBUG -- :   [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+D, [2011-06-28T06:47:27.486020 #10395] DEBUG -- :   [1m[36mSQL (3.3ms)[0m  [1mDROP TABLE "people"[0m
+D, [2011-06-28T06:47:27.488588 #10395] DEBUG -- :   [1m[35mSQL (2.2ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "forename" varchar(255), "surname" varchar(255), "description" text) 
+D, [2011-06-28T06:47:27.489126 #10395] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-06-28T06:47:27.489479 #10395] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
+I, [2011-06-28T06:47:27.490028 #10395]  INFO -- : TEST

@@ -1,5 +1,4 @@
 require "xss_defense/version"
+require 'xss_defense/active_record'
 
-module XssDefense
-  # Your code goes here...
-end
+ActiveRecord::Base.send :include, XssDefense::ActiveRecord
