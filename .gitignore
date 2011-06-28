@@ -5,3 +5,4 @@ pkg/*
 
 /debug.log
 /spec/xss_defense.sqlite3.db
+/spec/debug.log
