@@ -1,7 +1,7 @@
 
 module XssDefense
   class XssValidator < ActiveModel::EachValidator
-    WHITELIST_REGEXP = /\A[\w\s\&\-\!\@\xA3\$\%\*\(\)\{\}\+\[\]\\\/\.\,\?\;\:]*\Z/
+    WHITELIST_REGEXP = /\A[\w\s\&\-\!\@\xA3\$\%\*\(\)\{\}\+\[\]\\\/\.\,\?\;\:\'\"\~]*\Z/
     
     def whitelist_regexp(attribute)
       WHITELIST_REGEXP

@@ -25,4 +25,17 @@ describe XssDefense::XssValidator do
       p.should_not be_valid
     end
   end
+  
+  ALLOWED_CHARACTERS = [
+    ('a'..'z'), ('A'..'Z'), ('0'..'9'),
+    ' ', '\t', '&', '-', '!', '@', '\xA3',
+    '$', '%', '*', '(',')','{','}','+','[',
+    ']',"\\",'/','.',',','?',';',':',"'",'"','~']
+  
+  ALLOWED_CHARACTERS.map{|r| r.instance_of?(Range) ? r.to_a : r}.flatten.each do |character|
+    it "should allow the #{character} character" do
+      p = XssValidatorPerson.new(:surname => character)
+      p.should be_valid
+    end
+  end
 end
